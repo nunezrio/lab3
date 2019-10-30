@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.background-image {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./../images/address-book-bkg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+form {
+  background-color: rgba(179, 178, 176, 0.6);
+  margin: 0 auto;
+  margin-top: 24px;
+  padding: 32px;
+  width: 50vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+
+h2 {
+  color: white;
+  font-size: 40pt;
+  margin: 8px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+label {
+  font-size: 16pt;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  width: 48vw;
+  padding-bottom: 4px;
+  align-self: flex-start;
+}
+
+input, #submit {
+  margin-bottom: 16px;
+  align-items: center;
+  width: 48vw;
+  height: 80px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14pt;
+  color: #707070;
+}
+
+#submit {
+  display: block;
+  font-size: 16pt;
+  color: black;
+  /* width: 48vw; */
+  font-family: "Maven Pro", sans-serif;
+}

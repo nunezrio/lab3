@@ -4,9 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Lab 3 Pt 1</title>
+    <title>Lab 3</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
+    <div class="background-image"></div>
+    <form action="submit">
+      <h2>My Contacts</h2>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" />
+      <label for="">Relation</label>
+      <input type="text" name="relation" id="" />
+      <!-- <select name="relation" id="relation">
+        <option value="Family">Family</option>
+        <option value="Friend">Friend</option>
+        <option value="Coworker">Coworker</option>
+      </select> -->
+      <label for="submit">&nbsp;</label>
+      <button type="submit" id="submit">Add</button>
+      <section id="contact-list"></section>
+    </form>
+    <div class="tinted-image"></div>
+
     <script src="script.js"></script>
   </body>
 </html>
