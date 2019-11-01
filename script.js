@@ -8,11 +8,14 @@ class AddressBook {
     this.contacts.push(person);
   }
   deleteAt(index) {
-    index = Number(index);
-    this.contacts = [
-      this.contacts.splice(0, index),
-      this.contacts.splice(index + 1)
-    ];
+    // index = Number(index);
+    // this.contacts = [
+    //   this.contacts.splice(0, index),
+    //   this.contacts.splice(index + 1)
+    // ];
+    // this.contacts.splice(index, 1);
+    // }
+
     this.contacts.splice(index, 1);
   }
 }
@@ -54,9 +57,10 @@ addressBook.deleteAt(3);
 
 console.log(addressBook);
 
-print(book);
+print(addressBook);
 
 function display() {
+  document.querySelector("#contact-list").innerHTML = "";
   addressBook.contacts.forEach((contact, index) => {
     const newEntry = document.createElement("div");
     newEntry.classList.add("contact_box");
@@ -65,7 +69,7 @@ function display() {
     <p>Email: ${contact.email}</p>
     <p>Phone: ${contact.phone}</p>
     <p>Relation: ${contact.relation}</p>
-    <i class="fa fa-trash" data-index-number=${index}" aria-hidden="true"></li>`;
+    <i class="fa fa-trash" data-index-number=${index} aria-hidden="true"></li>`;
     document.querySelector("#contact-list").appendChild(newEntry);
   });
 }
@@ -79,7 +83,7 @@ form.addEventListener("submit", addContact);
 function addContact(e) {
   e.preventDefault();
   const formData = new FormData(form);
-  AddressBook.add(
+  addressBook.add(
     formData.get("name"),
     formData.get("email"),
     formData.get("phone"),

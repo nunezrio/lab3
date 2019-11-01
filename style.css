@@ -3,13 +3,13 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Maven Pro", sans-serif;
-}
-
-.background-image {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./../images/address-book-bkg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.background-image {
   position: absolute;
   top: 0;
   bottom: 0;
